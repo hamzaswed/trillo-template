@@ -15,11 +15,272 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">header</header>
+      <header class="header">
+        <figure class="logo">
+          <img src="./img/logo.png" alt="Company Logo" class="logo__image" />
+          <figcaption hidden>Trillo Hotels</figcaption>
+        </figure>
+
+        <form action="#" method="GET" class="search-form">
+          <label for="hotel_name" hidden>Search Hotel....</label>
+          <input
+            type="text"
+            placeholder="Search Hotel...."
+            class="search-form__input"
+            id="hotel_name"
+            name="hotel_name"
+          />
+          <button class="search-form__button" type="submit">
+            <svg class="search-form__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__list-item">
+              <a href="#" class="user-nav__link">
+                <svg class="user-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                </svg>
+                <small
+                  class="user-nav__notification user-nav__notification--saved"
+                  >7</small
+                >
+              </a>
+            </li>
+            <li class="user-nav__list-item">
+              <a href="#" class="user-nav__link">
+                <svg class="user-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+                <small
+                  class="user-nav__notification user-nav__notification--chat"
+                  >13</small
+                >
+              </a>
+            </li>
+            <li class="user-nav__list-item">
+              <a href="#" class="user-nav__link user-nav__link--user-info">
+                <img
+                  src="img/myphoto.jpeg"
+                  alt="User Photo"
+                  class="user-nav__user-photo"
+                />
+                <small class="user-nav__user-name">Hamza</small>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div class="content">
-        <nav class="sidebar">navigation bar</nav>
-        <main class="content-view">main content</main>
+        <aside class="sidebar">
+          <nav class="side-nav">
+            <ul class="side-nav__list">
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link side-nav__link--active">
+                  <svg class="side-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                  </svg>
+                  <span class="side-nav__text">Hotel</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-aircraft-take-off"
+                    ></use>
+                  </svg>
+                  <span class="side-nav__text">Flight</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                  </svg>
+                  <span class="side-nav__text">Car Rental</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                  <span class="side-nav__text">Tours</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <p class="copyright">
+            Build with ♥ by
+            <a
+              class="copyright__link"
+              href="https://www.linkedin.com/in/hamza-swed-a2b505221"
+              >Hamza Swed</a
+            >
+            Copyright &copy; 2023
+          </p>
+        </aside>
+
+        <main class="content-view">
+          <section class="gallery-section">
+            <div class="gallery">
+              <figure class="gallery__item">
+                <img
+                  src="img/hotel-1.jpg"
+                  alt="Photo of hotel 1"
+                  class="gallery__photo"
+                  loading="lazy"
+                />
+                <figcaption class="gallery__text-wrapper">
+                  <span class="gallery__text">hotel with Night spectacle</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery__item">
+                <img
+                  src="img/hotel-2.jpg"
+                  alt="Photo of hotel 2"
+                  class="gallery__photo"
+                  loading="lazy"
+                />
+                <figcaption class="gallery__text-wrapper">
+                  <span class="gallery__text">Waterfront hotel</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery__item">
+                <img
+                  src="img/hotel-3.jpg"
+                  alt="Photo of hotel 3"
+                  class="gallery__photo"
+                  loading="lazy"
+                />
+                <figcaption class="gallery__text-wrapper">
+                  <span class="gallery__text">Mountain-front hotel</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="overview-section">
+            <article class="overview">
+              <h1 class="overview__heading">Hoter las palmas</h1>
+
+              <div class="overview__stars">
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+
+              <div class="overview__location-btn">
+                <a href="#" class="btn-inline btn-inline--reversed">
+                  <span class="btn-inline__text">Syria, Homs</span>
+                  <svg class="btn-inline__icon">
+                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="overview__rating">
+                <span class="overview__rating-average">8.4</span>
+                <small class="overview__rating-counts">429 Votes</small>
+              </div>
+            </article>
+          </section>
+
+          <section class="section-details">
+            <section class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+
+              <ul class="details-list">
+                <li class="details-list__item">Close to the beach</li>
+                <li class="details-list__item">Breakfast included</li>
+                <li class="details-list__item">Free airport shuttle</li>
+                <li class="details-list__item">Free wifi in all rooms</li>
+                <li class="details-list__item">Air conditioning and heating</li>
+                <li class="details-list__item">Pets allowed</li>
+                <li class="details-list__item">We speak all languages</li>
+                <li class="details-list__item">Perfect for families</li>
+              </ul>
+
+              <div class="recommend">
+                <p class="recommend__text">
+                  Lucy and 3 other friends recommend this hotle.
+                </p>
+                <ul class="recommend__friend-list">
+                  <li class="recommend__friend-list-item">
+                    <img
+                      src="img/user-3.jpg"
+                      alt="A friend how recommend this hotel"
+                      class="recommend__photo"
+                    />
+                  </li>
+                  <li class="recommend__friend-list-item">
+                    <img
+                      src="img/user-4.jpg"
+                      alt="A friend how recommend this hotel"
+                      class="recommend__photo"
+                    />
+                  </li>
+                  <li class="recommend__friend-list-item">
+                    <img
+                      src="img/user-5.jpg"
+                      alt="A friend how recommend this hotel"
+                      class="recommend__photo"
+                    />
+                  </li>
+                  <li class="recommend__friend-list-item">
+                    <img
+                      src="img/user-6.jpg"
+                      alt="A friend how recommend this hotel"
+                      class="recommend__photo"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="user-reviews">User Reviews</section>
+          </section>
+        </main>
       </div>
     </div>
+
+    <footer hidden>
+      <p class="copyright">
+        Build with ♥ by
+        <a
+          class="copyright__link"
+          href="https://www.linkedin.com/in/hamza-swed-a2b505221"
+          >Hamza Swed</a
+        >
+        Copyright &copy; 2023
+      </p>
+    </footer>
   </body>
 </html>
