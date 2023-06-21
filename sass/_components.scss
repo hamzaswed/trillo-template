@@ -679,6 +679,13 @@
   gap: 0.5rem;
   background-color: transparent;
   transition: all 0.2s;
+  margin: auto;
+
+  & span:not(&__text) {
+    align-self: self-start;
+    color: var(--color-primary);
+    margin-left: 3px;
+  }
 
   &__text {
     font-size: inherit;
