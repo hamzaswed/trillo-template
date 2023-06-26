@@ -503,11 +503,25 @@
 /////////////////////////////
 // SIDE NAVIGATION
 .side-nav {
+  @media only screen and (max-width: $bp-medium) {
+    &__list {
+      display: flex;
+    }
+  }
+
   &__item {
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.3rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }
     }
 
     &::before {
@@ -536,6 +550,11 @@
     padding: 1.2rem 2rem;
     position: relative;
     z-index: 3;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 
   &__item:has(&__link--active)::before {
@@ -566,6 +585,10 @@
   color: var(--color-white);
   text-align: center;
   font-size: 1.2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 
   &__link {
     color: var(--color-primary-light);
@@ -814,6 +837,11 @@
   position: relative;
   overflow: hidden;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
   &__description {
     margin-bottom: 2rem;
     position: relative;
@@ -867,6 +895,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
 
   &__text {
     font-size: 2rem;

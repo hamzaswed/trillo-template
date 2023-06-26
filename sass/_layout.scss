@@ -5,6 +5,12 @@
   border-radius: 3px;
   overflow: hidden;
   min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -18,7 +24,10 @@
 
 .content {
   display: flex;
-  align-items: stretch;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -28,6 +37,10 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
 }
 
 .content-view {
@@ -42,12 +55,21 @@
   border-bottom: var(--border-line);
   font-size: 1.4rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    gap: 3rem;
+    padding: 3rem;
+  }
+
   & .description {
     border-radius: 3px;
     flex: 0 0 60%;
     background-color: var(--color-white);
     box-shadow: var(--shadow-box);
     padding: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 2rem;
+    }
   }
 
   & .user-reviews {
