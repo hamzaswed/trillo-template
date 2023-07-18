@@ -5,7 +5,7 @@
 
   <h2 align="center">Trillo Template Project</h2>
 
-A app built using HTML, CSS(Sass)
+A template built using HTML, CSS(Sass)
 
 <a href="https://trillo-template.netlify.app/"><strong>➥ Live Demo</strong></a>
 
